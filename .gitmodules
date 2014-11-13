@@ -1,0 +1,3 @@
+[submodule "library/PHP-PDO-Wrapper"]
+	path = library/PHP-PDO-Wrapper
+	url = https://github.com/k725/PHP-PDO-Wrapper.git

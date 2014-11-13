@@ -50,7 +50,7 @@
 			{
 				if ( (time() - $value['lastTime']) >= settingsTS3::DeleteTime && !$ts3del->isChannelIgnore() )
 				{
-					$ts3del->setChannelId($value['channnelID']);
+					$ts3del->setChannelId($value['channelID']);
 					$ts3del->setDbDeleteChannel();
 					$ts3->channelDelete($value['channelID'], 0);
 				}

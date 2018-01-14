@@ -58,7 +58,7 @@
 
 			$this->pdo->closeStmt();
 
-			return $row;
+			return $result;
 		}
 
 		public function setDbAddChannel()
@@ -76,7 +76,7 @@
 
 		public function setDbDeleteChannel()
 		{
-			$sql = 'DELETE FROM `'.$this->db_table.'` WHERE channelID = :id';
+			$sql = 'DELETE FROM `'.$this->dbTable.'` WHERE channelID = :id';
 
 			$this->pdo->runSql($sql, array(
 				':id' => array($this->channelId, PDO::PARAM_INT)
